@@ -52,8 +52,4 @@ const toggleAllMovies = () => {
   )
 }
 
-// Movies.propType = {
-//   movies: array
-// }
-
 export default Movies
