@@ -1,4 +1,15 @@
 About:
+  User Profile:
+    user_profile.jsx is a small module that allows the user’s name to be changed after a button is clicked. It demonstrates that elements 
+    can be modified within a stateful component. Stateful components use constructors and super to enable dynamic behavior for users. In 
+    class-based functions, data within the object can be altered, similar to Object-Oriented Programming (OOP).
+
+  Movies:
+    movies.jsx is a more robust program. It dynamically changes the state of a prop, bringing the screen to life for the user. Props are 
+    utilized to allow the user to toggle between viewing drama movies and all movies. Within each movie, the user can view the description or 
+    delete the movie from the list entirely. These interactions are triggered by the ‘onClick’ event within the button, allowing the state of 
+    the element to be dynamically updated.
+        
 
 Extensions:
 

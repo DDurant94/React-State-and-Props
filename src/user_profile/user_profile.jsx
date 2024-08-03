@@ -4,11 +4,10 @@ class UserProfile extends Component {
   constructor() {
       super();
       this.state = { name: 'Alex' };
-
-      this.changeName = this.changeName.bind(this)
+      this.changeName = this.changeName.bind(this);
   }
 
-  
+//   change the state of name
   changeName() {
       this.setState({name: 'Charlie'});
   }

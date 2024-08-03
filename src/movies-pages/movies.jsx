@@ -10,18 +10,22 @@ const Movies = () => {
 
 const [showAll, setShowAll] = useState(true);
 
+
+// opening the description of the movie
 const toggleDetailsOpen = (index) => {
   const updatedMovies = [...movies];
   updatedMovies[index].showDetails = !updatedMovies[index].showDetails;
   setMovies(updatedMovies);
 }
 
+// removing movies from the list
 const removeMovie = (index) => {
   const updatedMovies = [...movies]; 
   updatedMovies.splice(index,1);
   setMovies(updatedMovies);
 }
 
+// toggling the view of what movies to see
 const toggleAllMovies = () => {
   setShowAll(!showAll)
 }
@@ -31,7 +35,7 @@ const toggleAllMovies = () => {
 
       <h2>Favorite Movies</h2>
 
-      <button onClick={toggleAllMovies}>{showAll ? 'drama' : 'Show All Movies'}</button>
+      <button onClick={toggleAllMovies}>{showAll ? 'Show Drama' : 'Show All Movies'}</button>
 
       <ul>
       {movies.map((movie, index) => (
